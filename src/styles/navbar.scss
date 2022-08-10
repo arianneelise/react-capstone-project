@@ -1,0 +1,26 @@
+.header-wrapper {
+  background-color: $main-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-weight: 300;
+      padding-left: 20px;
+    }
+  }
+  .links {
+    a:visited {
+      color: inherit;
+    }
+    a {
+      padding: 0 10px;
+      text-decoration: none;
+    }
+  }
+}

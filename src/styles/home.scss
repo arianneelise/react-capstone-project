@@ -1,0 +1,13 @@
+.home-hero {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  p {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -30px;
+    color: $main-color;
+  }
+}

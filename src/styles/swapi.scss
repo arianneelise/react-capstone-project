@@ -1,0 +1,37 @@
+.swapi-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  form {
+    .text-input {
+      line-height: 2em;
+      width: 300px;
+      border-radius: 6px;
+      border: 1px solid $main-color;
+    }
+    button {
+      @include button-style();
+      margin-right: 0;
+    }
+    .options-wrapper {
+      display: flex;
+      justify-content: center;
+      div {
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    .name {
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+  }
+}
