@@ -1,0 +1,27 @@
+.weather-wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  form {
+    padding: 10px 0 40px 0;
+    input {
+      @include input-style;
+      width: 200px;
+    }
+    button {
+      @include button-style;
+    }
+  }
+
+  .weather-display {
+    width: 350px;
+    box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 6px;
+    h2 {
+      margin: 0;
+    }
+  }
+}

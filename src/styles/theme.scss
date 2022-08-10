@@ -13,4 +13,11 @@
   }
 }
 
+@mixin input-style {
+  line-height: 2em;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid $main-color;
+}
+
 $main-color: rgb(0, 0, 0, 0.6);

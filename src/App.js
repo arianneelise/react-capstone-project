@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Logout from "./pages/Logout";
 import About from "./pages/About";
 import Swapi from "./component/widgets/Swapi";
+import Weather from "./component/widgets/Weather";
 // import NoMatch from "./component/NoMatch";
 import "./styles/App.scss";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/logout" component={Logout} />
           <Route path="/swapi" component={Swapi} />
+          <Route path="/weather" component={Weather} />
           {/* <Route component={NoMatch} /> */}
         </Switch>
       </Router>

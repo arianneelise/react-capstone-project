@@ -7,10 +7,7 @@
 
   form {
     .text-input {
-      line-height: 2em;
-      width: 300px;
-      border-radius: 6px;
-      border: 1px solid $main-color;
+      @include input-style();
     }
     button {
       @include button-style();

@@ -1,5 +1,3 @@
-// Swapi Query Widget -should be able to search swapi through your app
-// and display information retrieved
 import { useState, useEffect } from "react";
 
 import People from "../swapi/People";
