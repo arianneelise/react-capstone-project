@@ -1,0 +1,11 @@
+.bad-joke-wrapper {
+  text-align: center;
+  .button-wrapper {
+    margin-top: 50px;
+    height: 50px;
+    button {
+      @include button-style();
+      margin-bottom: 20px;
+    }
+  }
+}
