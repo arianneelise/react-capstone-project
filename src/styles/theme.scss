@@ -4,7 +4,7 @@
   background-color: rgb(167, 181, 193);
   border: none;
   border-radius: 4px;
-  box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.2);
+  box-shadow: $box-shadow;
   color: $main-color;
   font-weight: bold;
   &:hover {
@@ -30,3 +30,4 @@
 }
 
 $main-color: rgb(0, 0, 0, 0.6);
+$box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.2);

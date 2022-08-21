@@ -15,6 +15,29 @@
     }
   }
   .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+      font-size: 12px;
+      padding-right: 40px;
+      .check-icon {
+        padding-right: 5px;
+      }
+    }
+    button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      font-size: 16px;
+      padding: 10px 15px;
+      margin-left: 10px;
+      border-radius: 6px;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
     a:visited {
       color: inherit;
     }
