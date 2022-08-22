@@ -1,8 +1,5 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
-// TODO:
-// Render nomatch page.
-
 import Navbar from "./component/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -15,8 +12,8 @@ import Login from "./pages/Login";
 import PrivateRoute from "./pages/auth/PrivateRoute";
 import NoMatch from "./component/NoMatch";
 import Dropzone from "./component/widgets/Dropzone";
-import "./styles/App.scss";
 import { AuthProvider } from "./context/AuthContext";
+import "./styles/App.scss";
 
 function App() {
   return (
@@ -37,6 +34,7 @@ function App() {
             <PrivateRoute path="/dictionary" component={Dictionary} />
             <PrivateRoute path="/jokes" component={Jokes} />
             <PrivateRoute path="/dropzone" component={Dropzone} />
+
             <Route path="*" component={NoMatch} />
           </Switch>
         </AuthProvider>

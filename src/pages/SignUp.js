@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
-import { auth } from "../firebase";
+import { Link, useHistory } from "react-router-dom";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
-
-import { useAuth } from "../context/AuthContext";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { auth } from "../firebase";
+import { useAuth } from "../context/AuthContext";
 
 export default function SignUp() {
   const emailRef = useRef();
@@ -13,6 +13,7 @@ export default function SignUp() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const { signup } = useAuth();
+  const { history } = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -27,6 +28,7 @@ export default function SignUp() {
       setError("");
       setLoading(true);
       await signup(auth, emailRef.current.value, passwordRef.current.value);
+      history.push("/login");
     } catch (err) {
       console.log(err);
       setError("Failed to create an account.");
@@ -40,9 +42,12 @@ export default function SignUp() {
       <FontAwesomeIcon icon={faGear} size="6x" className="icon" />
       <form onSubmit={handleSubmit}>
         {error && <p style={{ color: "red" }}>{error}</p>}
+
         <input type="text" placeholder="email" ref={emailRef} />
+
         <div className="passwords">
           <input type="password" placeholder="Password" ref={passwordRef} />
+
           <input
             type="password"
             placeholder="Confirm Password"
@@ -53,6 +58,7 @@ export default function SignUp() {
           Sign Up
         </button>
       </form>
+
       <p>
         Already have an account? <Link to="/login">Login</Link>
       </p>
