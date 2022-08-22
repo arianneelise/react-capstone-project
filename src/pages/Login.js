@@ -32,6 +32,7 @@ export default function Login() {
 
   return (
     <div className="login">
+      <h1>Capstone Sign In</h1>
       <FontAwesomeIcon icon={faGear} size="6x" className="icon" />
       <form onSubmit={handleSubmit}>
         {error && <p style={{ color: "red" }}>{error}</p>}
@@ -42,7 +43,7 @@ export default function Login() {
         </button>
       </form>
       <p>
-        Don't have an account? <Link to="/">Sign Up</Link>
+        Don't have an account? <Link to="/sign-up">Sign Up</Link>
       </p>
     </div>
   );

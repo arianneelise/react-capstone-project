@@ -1,0 +1,17 @@
+.dropzone-container {
+  text-align: center;
+  width: 300px;
+  display: block;
+  margin: 100px auto;
+  .dropzone {
+    border-radius: 6px;
+    padding: 50px;
+    border: 3px dotted $main-color;
+  }
+  .file {
+    background-color: rgb(201, 221, 237);
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 20px 25px;
+  }
+}

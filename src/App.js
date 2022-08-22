@@ -14,6 +14,7 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import PrivateRoute from "./pages/auth/PrivateRoute";
 import NoMatch from "./component/NoMatch";
+import Dropzone from "./component/widgets/Dropzone";
 import "./styles/App.scss";
 import { AuthProvider } from "./context/AuthContext";
 
@@ -35,6 +36,7 @@ function App() {
             <PrivateRoute path="/weather" component={Weather} />
             <PrivateRoute path="/dictionary" component={Dictionary} />
             <PrivateRoute path="/jokes" component={Jokes} />
+            <PrivateRoute path="/dropzone" component={Dropzone} />
             <Route path="*" component={NoMatch} />
           </Switch>
         </AuthProvider>

@@ -3,6 +3,7 @@ import Space from "../images/space.jpg";
 import Clouds from "../images/clouds.jpg";
 import Dictionary from "../images/dictionary.jpg";
 import Laugh from "../images/laugh.jpg";
+import Files from "../images/files.jpg";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Widget img={Clouds} name="Weather" />
         <Widget img={Dictionary} name="Dictionary" />
         <Widget img={Laugh} name="Jokes" />
+        <Widget img={Files} name="Dropzone" />
         <p>
           Look at the code on{" "}
           <a href="https://github.com/arianneelise/widgets-projects" target="/">
