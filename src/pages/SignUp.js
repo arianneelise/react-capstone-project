@@ -13,7 +13,7 @@ export default function SignUp() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const { signup } = useAuth();
-  const { history } = useHistory();
+  const history = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
